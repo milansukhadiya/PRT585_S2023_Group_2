@@ -1,0 +1,62 @@
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/appsettings.Development.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/appsettings.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.staticwebassets.runtime.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.exe
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.deps.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.runtimeconfig.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.dll
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.pdb
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.csproj.AssemblyReference.cache
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.GeneratedMSBuildEditorConfig.editorconfig
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.AssemblyInfoInputs.cache
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.AssemblyInfo.cs
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.csproj.CoreCompileInputs.cache
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.MvcApplicationPartsAssemblyInfo.cache
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.RazorAssemblyInfo.cache
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.RazorAssemblyInfo.cs
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.MvcMovie.Microsoft.AspNetCore.StaticWebAssets.props
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.build.MvcMovie.props
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.MvcMovie.props
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.MvcMovie.props
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets.pack.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets.build.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets.development.json
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/scopedcss/bundle/MvcMovie.styles.css
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/scopedcss/projectbundle/MvcMovie.bundle.scp.css
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.dll
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/refint/MvcMovie.dll
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.pdb
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.genruntimeconfig.cache
+D:/工作/咸鱼/5. 小测试/MvcMovie/MvcMovie/obj/Debug/net7.0/ref/MvcMovie.dll
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/appsettings.Development.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/appsettings.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.staticwebassets.runtime.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.deps.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.runtimeconfig.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.dll
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/bin/Debug/net7.0/MvcMovie.pdb
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.csproj.AssemblyReference.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.AssemblyInfoInputs.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.AssemblyInfo.cs
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.csproj.CoreCompileInputs.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.MvcApplicationPartsAssemblyInfo.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.RazorAssemblyInfo.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.RazorAssemblyInfo.cs
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.MvcMovie.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.build.MvcMovie.props
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.MvcMovie.props
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.MvcMovie.props
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets.build.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/staticwebassets.development.json
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/scopedcss/bundle/MvcMovie.styles.css
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/scopedcss/projectbundle/MvcMovie.bundle.scp.css
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.dll
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/refint/MvcMovie.dll
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.pdb
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/MvcMovie.genruntimeconfig.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/code/MvcMovie/MvcMovie/obj/Debug/net7.0/ref/MvcMovie.dll
