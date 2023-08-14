@@ -1,0 +1,36 @@
+<div class="container">
+    <h2>User List</h2>
+    <ul class="users">
+      <li *ngFor="let user of users">
+        <button [class.selected]="user === selectedUser" type="button" (click)="onSelect(user)">
+          <span class="badge">{{user.id}}</span>
+          <span class="name">{{user.name}}</span>
+        </button>
+      </li>
+    </ul>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+      <div *ngIf="selectedUser" class="user-details">
+        <h2>{{selectedUser.name | uppercase}} Information</h2>
+        <div>id: {{selectedUser.id}}</div>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input id="name" name="name" [(ngModel)]="selectedUser.name" placeholder="Name" required>
+          <div *ngIf="myForm.controls.name.invalid && (myForm.controls.name.dirty || myForm.submitted)" class="error-message">
+            <div *ngIf="myForm.controls.name.errors.required">Name is required</div>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input id="email" name="email" [(ngModel)]="selectedUser.email" placeholder="Email" required email>
+          <div *ngIf="myForm.controls.email.invalid && (myForm.controls.email.dirty || myForm.submitted)" class="error-message">
+            <div *ngIf="myForm.controls.email.errors.required">Email is required</div>
+            <div *ngIf="myForm.controls.email.errors.email">Invalid email address</div>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" [disabled]="myForm.invalid">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
