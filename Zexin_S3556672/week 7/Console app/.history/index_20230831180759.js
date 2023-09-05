@@ -1,0 +1,58 @@
+const nodemailer = require('nodemailer');
+const cron = require('node-cron');
+
+// Business Layer Object
+class BusinessLayer {
+    createTicket(ticket) {
+      console.log('Ticket created:', ticket);
+    }
+  }
+  
+  // Ticketing System
+  class TicketingSystem {
+    constructor(businessLayer) {
+      this.businessLayer = businessLayer;
+    }
+  
+    sendTicket(ticket) {
+      this.businessLayer.createTicket(ticket);
+    }
+  }
+
+// Schedule Job to Send Email
+const scheduleEmail = () => {
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'hayleyhzx@gmail.com',
+      pass: 'cdlyatjoxtlfache'
+    }
+  });
+
+  const mailOptions = {
+    from: 'hayleyhzx@gmail.com',
+    to: 'hayleyhzx@gmail.com',
+    subject: 'Scheduled Email',
+    text: 'This is a scheduled email.'
+  };
+
+  // Schedule a job to send an email every minute
+  cron.schedule('* * * * *', () => {
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+    });
+  });
+};
+
+const main = () => {
+  const businessLayer = new BusinessLayer();
+  const ticketingSystem = new TicketingSystem();
+
+  scheduleEmail();
+};
+
+main();
