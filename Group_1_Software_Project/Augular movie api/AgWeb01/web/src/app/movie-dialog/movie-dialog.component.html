@@ -1,0 +1,75 @@
+<h1 mat-dialog-title>{{ dialogData.mode === 'edit' ? 'Edit' : 'Add ' }}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="movieForm">
+    <mat-grid-list cols="2" rowHeight="100px" >
+      <mat-grid-tile>
+
+        <!-- Name Field -->
+        <mat-form-field>
+          <input matInput formControlName="name" placeholder="Name" required>
+          <mat-error *ngIf="movieForm.controls['name'].hasError('required')">Name is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <!-- ReleaseDate Field -->
+        <mat-form-field>
+          <mat-label>ReleaseDate</mat-label>
+          <input matInput formControlName="releaseDate" placeholder="ReleaseDate" required [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error *ngIf="movieForm.controls['releaseDate'].hasError('required')">ReleaseDate is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <!-- Director Field -->
+        <mat-form-field>
+          <mat-label>Director</mat-label>
+          <input matInput formControlName="director" placeholder="director" required>
+          <mat-error *ngIf="movieForm.controls['director'].hasError('required')">Director is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <!-- EmailAddress Field -->
+        <mat-form-field>
+          <input matInput type="email" formControlName="emailAddress" placeholder="EmailAddress" required>
+          <mat-error *ngIf="movieForm.controls['emailAddress'].hasError('required')">EmailAddress is
+            required</mat-error>
+          <mat-error *ngIf="movieForm.controls['emailAddress'].hasError('email')">Invalid EmailAddress
+            format</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <!-- Language Field -->
+        <mat-form-field>
+          <mat-label>Language</mat-label>
+          <mat-select formControlName="language" required>
+            <mat-option value="Chinese">Chinese</mat-option>
+            <mat-option value="English">English</mat-option>
+          </mat-select>
+          <mat-error *ngIf="movieForm.controls['language'].hasError('required')">Language is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <!-- Category Field -->
+        <mat-form-field>
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category" required>
+            <mat-option value="Action">Action</mat-option>
+            <mat-option value="Drama">Drama</mat-option>
+            <mat-option value="Horror">Horror</mat-option>
+          </mat-select>
+          <mat-error *ngIf="movieForm.controls['category'].hasError('required')">Category is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+  <button mat-button [disabled]="movieForm.invalid" (click)="onSaveClick()">Save</button>
+</div>

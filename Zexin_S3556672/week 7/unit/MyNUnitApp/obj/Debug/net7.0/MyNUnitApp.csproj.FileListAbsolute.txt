@@ -1,0 +1,5 @@
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/week 7/unit/MyNUnitApp/obj/Debug/net7.0/MyNUnitApp.csproj.AssemblyReference.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/week 7/unit/MyNUnitApp/obj/Debug/net7.0/MyNUnitApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/week 7/unit/MyNUnitApp/obj/Debug/net7.0/MyNUnitApp.AssemblyInfoInputs.cache
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/week 7/unit/MyNUnitApp/obj/Debug/net7.0/MyNUnitApp.AssemblyInfo.cs
+/Users/hayleyhuang/Downloads/达尔文 作业/prt 585/week 7/unit/MyNUnitApp/obj/Debug/net7.0/MyNUnitApp.csproj.CoreCompileInputs.cache
