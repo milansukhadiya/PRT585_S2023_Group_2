@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Delete Unit</h1>
+<div mat-dialog-content>
+  <h2>Delete this?</h2>
+  <ul>
+    <li>ID: {{ data.UnitId }}</li>
+    <li>Unit Name: {{ data.UnitName }}</li>
+    <li>Unit Code: {{ data.UnitCode }}</li>
+  </ul>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button
+    mat-dialog-close
+    (click)="deleteUnit()"
+    mat-raised-button
+    color="warn"
+  >
+    Delete
+  </button>
+  <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>
