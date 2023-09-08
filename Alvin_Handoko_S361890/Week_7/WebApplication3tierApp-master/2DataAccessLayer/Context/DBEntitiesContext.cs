@@ -26,6 +26,7 @@ namespace _2DataAccessLayer.Context
 
         public DbSet<Enrollment> Enrollments { get; set; }
 
+        public DbSet<Campus> Campus { get; set; }
 
         //security models
         public DbSet<UserAccount> UserAccounts { get; set; }
