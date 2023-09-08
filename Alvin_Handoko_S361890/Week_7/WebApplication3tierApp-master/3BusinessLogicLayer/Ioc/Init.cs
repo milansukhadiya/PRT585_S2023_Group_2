@@ -16,6 +16,7 @@ namespace _3BusinessLogicLayer.Ioc
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IUnitService, UnitService>();
             services.AddScoped<ICampusService, CampusService>();
+            services.AddScoped<IEventService, EventService>();
             services.AddScoped<IEnrollmentService, EnrollmentService>();
             services.AddScoped<ISecurityService, SecurityService>();
             //services.AddScoped<ICategoryService, CategoryService>();

@@ -28,6 +28,8 @@ namespace _2DataAccessLayer.Context
 
         public DbSet<Campus> Campus { get; set; }
 
+        public DbSet<Event> Event { get; set; }
+
         //security models
         public DbSet<UserAccount> UserAccounts { get; set; }
 
