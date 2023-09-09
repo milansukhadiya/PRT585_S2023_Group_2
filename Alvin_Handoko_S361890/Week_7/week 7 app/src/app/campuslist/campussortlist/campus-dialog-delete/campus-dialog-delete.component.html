@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Delete Campus</h1>
+<div mat-dialog-content>
+  <h2>Delete this?</h2>
+  <ul>
+    <li>ID: {{ data.CampusId }}</li>
+    <li>Campus Name: {{ data.CampusName }}</li>
+    <li>Campus Address: {{ data.CampusAddress }}</li>
+  </ul>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button
+    mat-dialog-close
+    (click)="deleteCampus()"
+    mat-raised-button
+    color="warn"
+  >
+    Delete
+  </button>
+  <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

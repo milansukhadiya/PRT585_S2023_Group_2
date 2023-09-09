@@ -29,6 +29,11 @@ import { StudentDialogEditComponent } from './studentlist/studentsortlist/studen
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { CampusinputComponent } from './campusinput/campusinput.component';
+import { CampuslistComponent } from './campuslist/campuslist.component';
+import { CampussortlistComponent } from './campuslist/campussortlist/campussortlist.component';
+import { CampusDialogDeleteComponent } from './campuslist/campussortlist/campus-dialog-delete/campus-dialog-delete.component';
+import { CampusDialogEditComponent } from './campuslist/campussortlist/campus-dialog-edit/campus-dialog-edit.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +50,11 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     StudentDialogDeleteComponent,
     StudentDialogEditComponent,
     NavbarComponent,
+    CampusinputComponent,
+    CampuslistComponent,
+    CampussortlistComponent,
+    CampusDialogDeleteComponent,
+    CampusDialogEditComponent,
     
   ],
   imports: [

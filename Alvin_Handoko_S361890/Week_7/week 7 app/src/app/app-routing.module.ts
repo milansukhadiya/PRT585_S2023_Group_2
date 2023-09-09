@@ -3,10 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { StudentlistComponent } from './studentlist/studentlist.component';
 import { UnitListComponent } from './unit-list/unit-list.component';
+import { CampuslistComponent } from './campuslist/campuslist.component';
 
 const routes:Routes =[
   {path: 'students', component: StudentlistComponent},
   {path: 'units', component: UnitListComponent},
+  {path: 'campuses', component: CampuslistComponent},
+  {path: 'events', component: UnitListComponent},
 ]
 
 @NgModule({
