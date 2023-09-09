@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Edit Student</h1>
+<div mat-dialog-content>
+    <form [formGroup]="Student">
+        <mat-form-field>
+            <mat-label>Student Name</mat-label>
+            <input formControlName="StudentName" matInput>
+            <mat-error *ngIf="Student.controls['StudentName'].hasError('required')">Student Name is required</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Classroom Name</mat-label>
+            <mat-select formControlName="ClassroomId" required>
+                <mat-option *ngFor="let item of classroom" [value]="item.ClassroomId">
+                    {{item.ClassroomName}}
+                  </mat-option>
+            </mat-select>
+            <mat-error *ngIf="Student.controls['ClassroomId'].hasError('required')">Classroom Name is required</mat-error>
+          </mat-form-field>
+    </form>
+    
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button [disabled]="Student.invalid" mat-dialog-close (click)="updateStudent()" mat-raised-button color="primary">Save</button>
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

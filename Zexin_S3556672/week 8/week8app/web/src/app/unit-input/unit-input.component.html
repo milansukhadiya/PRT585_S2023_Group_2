@@ -1,0 +1,35 @@
+
+<form #unitform="ngForm" (ngSubmit)="addUnit(unitform)">
+  <div class="form-group">
+    <label for="unitname">Unit Name</label>
+    <input
+    #unitnameerror ='ngModel'
+      type="text"
+      class="form-control"
+      id="unitname"
+      required
+      [(ngModel)]="unit.UnitName"
+      name="unitName"
+    />
+    <div class="alert alert-danger" [hidden]="unitnameerror.valid || unitnameerror.pristine">Unit Name is required</div>
+  </div>
+  <div class="form-group">
+    <label for="unitcode">Unit Code</label>
+    <input
+    #unitcodeerror="ngModel"
+    
+      type="text"
+      class="form-control"
+      id="unitcode"
+      required
+      
+      [(ngModel)]="unit.UnitCode"
+      maxlength="7"
+      name="unitCode"
+    />
+    <div class="alert alert-danger" [hidden]="unitnameerror.valid || unitnameerror.pristine">Unit Code is required</div>
+  </div>
+  <div>
+    <button [disabled]="unitform.invalid" class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</form>

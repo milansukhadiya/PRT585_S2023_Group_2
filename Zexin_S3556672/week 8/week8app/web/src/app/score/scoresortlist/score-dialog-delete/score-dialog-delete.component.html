@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Delete Score</h1>
+<div mat-dialog-content>
+  <h2>Delete this?</h2>
+  <ul>
+    <li>ID: {{ data.ScoreId }}</li>
+    <li>Unit Name: {{ data.Unit }}</li>
+    <li>Student Name: {{ data.Student }}</li>
+    <li>Score: {{ data.ScoreValue }}</li>
+  </ul>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button
+    mat-dialog-close
+    (click)="deleteScore()"
+    mat-raised-button
+    color="warn"
+  >
+    Delete
+  </button>
+  <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

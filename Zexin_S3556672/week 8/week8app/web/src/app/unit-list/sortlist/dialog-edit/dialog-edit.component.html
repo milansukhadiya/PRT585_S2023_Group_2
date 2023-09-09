@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Edit Unit</h1>
+<div mat-dialog-content>
+    <form [formGroup]="Unit">
+        <mat-form-field>
+            <mat-label>Unit Name</mat-label>
+            <input formControlName="UnitName" matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Unit Code</mat-label>
+            <input formControlName="UnitCode" matInput>
+          </mat-form-field>
+    </form>
+    
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button [disabled]="Unit.invalid" mat-dialog-close (click)="updateUnit()" mat-raised-button color="primary">Save</button>
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

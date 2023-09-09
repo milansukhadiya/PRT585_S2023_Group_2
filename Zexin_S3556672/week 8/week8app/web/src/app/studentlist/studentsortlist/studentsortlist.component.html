@@ -1,0 +1,89 @@
+
+<div class="search-div">
+    <button mat-raised-button (click)="toggle_add()">
+      <mat-icon>add</mat-icon> Student
+    </button>
+    <mat-form-field class="search-form-field">
+      <input
+        (keyup)="tableFilter()"
+        [(ngModel)]="searchValue"
+        matInput
+        placeholder="Search"
+      />
+      <button
+        *ngIf="searchValue"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="searchValue = ''"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div [hidden]="toggleAdd" class="hiddenbox">
+    <app-studentinput></app-studentinput>
+  </div>
+  
+  <div class="mat-elevation-z8">
+    <table
+      mat-table
+      [dataSource]="data"
+      matSort
+      (matSortChange)="announceSortChange($event)"
+    >
+      <ng-container matColumnDef="StudentId">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by ID"
+        >
+          ID
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.StudentId }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="StudentName">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by name"
+        >
+          Name
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.StudentName }}</td>
+      </ng-container>
+      <ng-container matColumnDef="ClassroomId">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          sortActionDescription="Sort by Classroom"
+        >
+        Classroom
+        </th>
+        <td mat-cell *matCellDef="let element">{{ getClassroomById(element.ClassroomId)?.ClassroomName }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="Action">
+        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-icon-button (click)="openDialogEdit(element)"><mat-icon color="primary" filled>edit</mat-icon></button>
+          <button mat-icon-button  (click)="openDialogDelete(element)"><mat-icon color="warn" outline>delete</mat-icon></button>
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      <tr mat-footer-row *matFooterCellDef="['loading']"[ngClass]="{'hide':data!=null}"></tr>
+    </table>
+    <mat-paginator
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
+  
+  
+  
