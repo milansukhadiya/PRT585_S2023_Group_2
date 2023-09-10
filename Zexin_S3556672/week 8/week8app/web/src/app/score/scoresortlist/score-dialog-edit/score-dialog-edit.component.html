@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Edit Score</h1>
+<div mat-dialog-content>
+    <form [formGroup]="Score">
+        <mat-form-field>
+            <mat-label>Unit Name</mat-label>
+            <mat-select formControlName="UnitId" required>
+                <mat-option *ngFor="let item of unit" [value]="item.UnitId">
+                    {{item.UnitName}}
+                  </mat-option>
+            </mat-select>
+            <mat-error *ngIf="Score.controls['UnitId'].hasError('required')">Unit Name is required</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Student Name</mat-label>
+            <mat-select formControlName="StudentId" required>
+                <mat-option *ngFor="let item of student" [value]="item.StudentId">
+                    {{item.StudentName}}
+                  </mat-option>
+            </mat-select>
+            <mat-error *ngIf="Score.controls['StudentId'].hasError('required')">Student Name is required</mat-error>
+          </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Score</mat-label>
+            <input formControlName="ScoreValue" matInput>
+            <mat-error *ngIf="Score.controls['ScoreValue'].hasError('required')">Score is required</mat-error>
+          </mat-form-field>
+    </form>
+    
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button [disabled]="Score.invalid" mat-dialog-close (click)="updateScore()" mat-raised-button color="primary">Save</button>
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

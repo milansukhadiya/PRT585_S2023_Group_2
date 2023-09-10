@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <span>Student Management</span>
+    <div class="spacer"></div>
+    <div class="user-info">
+      <mat-icon>account_circle</mat-icon>
+      <span >{{ currentUser }}</span>
+      <a mat-button *ngIf="!currentUser" mat-button routerLink="/login">Login</a>
+      <mat-icon *ngIf="currentUser" (click)="logout()">exit_to_app</mat-icon>
+     
+    </div>
+      <a mat-button>Home</a>
+      <a mat-button routerLink="/units">Unit</a>
+      <a mat-button routerLink="/students">Student</a>
+      <a mat-button routerLink="/classroom">Classroom</a>
+      <a mat-button routerLink="/score">Score</a>
+    </mat-toolbar>
