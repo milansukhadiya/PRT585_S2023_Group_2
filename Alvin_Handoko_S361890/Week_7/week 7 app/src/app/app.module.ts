@@ -34,6 +34,11 @@ import { CampuslistComponent } from './campuslist/campuslist.component';
 import { CampussortlistComponent } from './campuslist/campussortlist/campussortlist.component';
 import { CampusDialogDeleteComponent } from './campuslist/campussortlist/campus-dialog-delete/campus-dialog-delete.component';
 import { CampusDialogEditComponent } from './campuslist/campussortlist/campus-dialog-edit/campus-dialog-edit.component';
+import { EventinputComponent } from './eventinput/eventinput.component';
+import { EventlistComponent } from './eventlist/eventlist.component';
+import { EventsortlistComponent } from './eventlist/eventsortlist/eventsortlist.component';
+import { EventDialogDeleteComponent } from './eventlist/eventsortlist/event-dialog-delete/event-dialog-delete.component';
+import { EventDialogEditComponent } from './eventlist/eventsortlist/event-dialog-edit/event-dialog-edit.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +60,11 @@ import { CampusDialogEditComponent } from './campuslist/campussortlist/campus-di
     CampussortlistComponent,
     CampusDialogDeleteComponent,
     CampusDialogEditComponent,
+    EventinputComponent,
+    EventlistComponent,
+    EventsortlistComponent,
+    EventDialogDeleteComponent,
+    EventDialogEditComponent,
     
   ],
   imports: [
