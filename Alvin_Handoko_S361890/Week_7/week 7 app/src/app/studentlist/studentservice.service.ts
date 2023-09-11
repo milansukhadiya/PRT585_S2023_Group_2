@@ -6,7 +6,6 @@ import { Student } from '../student';
   providedIn: 'root',
 })
 export class StudentserviceService {
-  [x: string]: any;
   constructor(private http: HttpClient) {}
 
   getStudents() {

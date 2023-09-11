@@ -1,0 +1,46 @@
+<form #Eventform="ngForm" (ngSubmit)="addEvent(Eventform)">
+    <div class="form-group">
+      <label for="EventName">Event Name</label>
+      <input
+      #eventnameerror ='ngModel'
+        type="text"
+        class="form-control"
+        id="EventName"
+        required
+        [(ngModel)]="event.EventName"
+        name="EventName"
+      />
+      <div class="alert alert-danger" [hidden]="eventnameerror.valid || eventnameerror.pristine">Event Name is required</div>
+    </div>
+    <div class="form-group">
+      <label for="EventLocation">Event Location</label>
+      <input
+      #eventlocationerror ='ngModel'
+        type="text"
+        class="form-control"
+        id="EventLocation"
+        required
+        [(ngModel)]="event.EventLocation"
+        name="EventLocation"
+      />
+      <div class="alert alert-danger" [hidden]="eventlocationerror.valid || eventlocationerror.pristine">Event Location is required</div>
+    </div>
+    <div class="form-group">
+        <label for="EventDateTime">Event Date Time</label>
+        <input
+        #eventdatetimeerror ='ngModel'
+        type="datetime-local"
+        class="form-control"
+        id="EventDateTime"
+        required
+        bsDatepicker
+        [(ngModel)]="event.EventDateTime"
+        name="EventDateTime"
+         />
+        <div class="alert alert-danger" [hidden]="eventdatetimeerror.valid || eventdatetimeerror.pristine">Event Location is required</div>
+      </div>
+    <div>
+      <button [disabled]="Eventform.invalid" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  

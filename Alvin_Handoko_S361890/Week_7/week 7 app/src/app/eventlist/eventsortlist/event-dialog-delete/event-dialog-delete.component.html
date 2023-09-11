@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Delete Event</h1>
+<div mat-dialog-content>
+  <h2>Delete this?</h2>
+  <ul>
+    <li>ID: {{ data.EventId }}</li>
+    <li>Event Name: {{ data.EventName }}</li>
+    <li>Event Location: {{ data.EventLocation }}</li>
+    <li>Event DateTime: {{ data.EventDateTime }}</li>
+  </ul>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button
+    mat-dialog-close
+    (click)="deleteEvent()"
+    mat-raised-button
+    color="warn"
+  >
+    Delete
+  </button>
+  <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

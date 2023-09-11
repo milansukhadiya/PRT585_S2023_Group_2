@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -34,7 +34,27 @@ import { CampuslistComponent } from './campuslist/campuslist.component';
 import { CampussortlistComponent } from './campuslist/campussortlist/campussortlist.component';
 import { CampusDialogDeleteComponent } from './campuslist/campussortlist/campus-dialog-delete/campus-dialog-delete.component';
 import { CampusDialogEditComponent } from './campuslist/campussortlist/campus-dialog-edit/campus-dialog-edit.component';
-
+import { ClassroomlistComponent } from './classroom/classroomlist.component';
+import { ClassroominputComponent } from './classroominput/classroominput.component';
+import { ClassroomsortlistComponent } from './classroom/classroomsortlist/classroomsortlist.component';
+import { ClassroomDialogDeleteComponent } from './classroom/classroomsortlist/classroom-dialog-delete/classroom-dialog-delete.component';
+import { ClassroomDialogEditComponent } from './classroom/classroomsortlist/classroom-dialog-edit/classroom-dialog-edit.component';
+import { MatSelectModule } from '@angular/material/select';
+import { ScorelistComponent } from './score/scorelist.component';
+import { ScoreinputComponent } from './scoreinput/scoreinput.component';
+import { ScoresortlistComponent } from './score/scoresortlist/scoresortlist.component';
+import { ScoreDialogDeleteComponent } from './score/scoresortlist/score-dialog-delete/score-dialog-delete.component';
+import { ScoreDialogEditComponent } from './score/scoresortlist/score-dialog-edit/score-dialog-edit.component';
+import {MatCardModule} from '@angular/material/card';
+import { EnrollmentComponent } from './enrollment/enrollment.component';
+import { EventlistComponent } from './eventlist/eventlist.component';
+import { EventinputComponent } from './eventinput/eventinput.component';
+import { EventsortlistComponent } from './eventlist/eventsortlist/eventsortlist.component';
+import { EventDialogDeleteComponent } from './eventlist/eventsortlist/event-dialog-delete/event-dialog-delete.component';
+import { EventDialogEditComponent } from './eventlist/eventsortlist/event-dialog-edit/event-dialog-edit.component';
+import { EnrollmentDialogEditComponent } from './enrollment/enrollment-dialog-edit/enrollment-dialog-edit.component';
+import { EnrollmentDialogDeleteComponent } from './enrollment/enrollment-dialog-delete/enrollment-dialog-delete.component';
+import { EnrollmentDialogAddComponent } from './enrollment/enrollment-dialog-add/enrollment-dialog-add.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +75,25 @@ import { CampusDialogEditComponent } from './campuslist/campussortlist/campus-di
     CampussortlistComponent,
     CampusDialogDeleteComponent,
     CampusDialogEditComponent,
+    ClassroomlistComponent,
+    ClassroominputComponent,
+    ClassroomsortlistComponent,
+    ClassroomDialogDeleteComponent,
+    ClassroomDialogEditComponent,
+    ScorelistComponent,
+    ScoreinputComponent,
+    ScoresortlistComponent,
+    ScoreDialogDeleteComponent,
+    ScoreDialogEditComponent,
+    EnrollmentComponent,
+    EnrollmentDialogEditComponent,
+    EnrollmentDialogDeleteComponent,
+    EnrollmentDialogAddComponent,
+    EventlistComponent,
+    EventsortlistComponent,
+    EventinputComponent,
+    EventDialogDeleteComponent,
+    EventDialogEditComponent
     
   ],
   imports: [
@@ -73,7 +112,9 @@ import { CampusDialogEditComponent } from './campuslist/campussortlist/campus-di
     MatDialogModule,
     ReactiveFormsModule,
     MatToolbarModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatSelectModule,
+    MatCardModule
 
 
     

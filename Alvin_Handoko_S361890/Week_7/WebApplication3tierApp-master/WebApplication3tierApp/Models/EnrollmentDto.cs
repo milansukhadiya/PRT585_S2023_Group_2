@@ -1,12 +1,17 @@
 ﻿using _1CommonInfrastructure.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication3tierApp.Models
 {
     public class EnrollmentDto
     {
+        [Key]
         public int EnrollmentId { get; set; }
+
         public int StudentId { get; set; }
-        public int UnitId { get; set; }
+
+        public string UnitIds { get; set; }
+
 
     }
 
@@ -17,7 +22,7 @@ namespace WebApplication3tierApp.Models
             var dst = new EnrollmentDto();
             dst.EnrollmentId = src.EnrollmentId;
             dst.StudentId = src.StudentId;
-            dst.UnitId = src.UnitId;
+            dst.UnitIds = src.UnitIds;
             return dst;
         }
 
@@ -26,7 +31,7 @@ namespace WebApplication3tierApp.Models
             var dst = new EnrollmentModel();
             dst.EnrollmentId = src.EnrollmentId;
             dst.StudentId = src.StudentId;
-            dst.UnitId = src.UnitId;
+            dst.UnitIds = src.UnitIds;
             return dst;
         }
     }

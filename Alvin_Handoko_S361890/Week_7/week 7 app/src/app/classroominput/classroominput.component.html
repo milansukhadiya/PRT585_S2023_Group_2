@@ -1,0 +1,21 @@
+
+<form #Classroomform="ngForm" (ngSubmit)="addClassroom(Classroomform)">
+    <div class="form-group">
+      <label for="ClassroomName">Classroom Name</label>
+      <input
+      #classroomnameerror ='ngModel'
+        type="text"
+        class="form-control"
+        id="ClassroomName"
+        required
+        [(ngModel)]="classroom.ClassroomName"
+        name="ClassroomName"
+      />
+      <div class="alert alert-danger" [hidden]="classroomnameerror.valid || classroomnameerror.pristine">Classroom Name is required</div>
+    </div>
+    
+    <div>
+      <button [disabled]="Classroomform.invalid" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  

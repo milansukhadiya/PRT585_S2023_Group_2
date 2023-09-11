@@ -16,7 +16,7 @@ namespace _2DataAccessLayer.Maps
             var dst = new EnrollmentModel();
 
             dst.EnrollmentId = src.EnrollmentId;
-            dst.UnitId = src.UnitId;
+            dst.UnitIds = src.UnitIds;
             dst.StudentId = src.StudentId;
 
             return dst;
@@ -30,7 +30,7 @@ namespace _2DataAccessLayer.Maps
             }
 
             dst.EnrollmentId = src.EnrollmentId;
-            dst.UnitId = src.UnitId;
+            dst.UnitIds = src.UnitIds;
             dst.StudentId = src.StudentId;
 
             return dst;

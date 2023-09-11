@@ -11,14 +11,14 @@ namespace _2DataAccessLayer.Context.Models
 {
     public class Enrollment
     {
-        [Required]
+        [Key]
         public int EnrollmentId { get; set; }
 
-        [ForeignKey("Student")]
         public int StudentId { get; set; }
-        public virtual StudentModel Student { get; set; }
-        [ForeignKey("Unit")]
-        public int UnitId { get; set; }
-        public virtual UnitModel Unit { get; set; }
+
+
+        // Collection of UnitIds as foreign keys from UnitModel
+        public string UnitIds { get; set; }
+
     }
 }

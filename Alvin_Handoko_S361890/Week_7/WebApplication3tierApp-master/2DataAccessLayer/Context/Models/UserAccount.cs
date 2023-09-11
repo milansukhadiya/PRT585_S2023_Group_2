@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,12 @@ namespace _2DataAccessLayer.Context.Models
 
     public class UserAccount
     {
+        [Key]
         public int UserAccountID { get; set; }
         public string UserId { get; set; }
         public string UserName { get; set; }
+
+        public string Password { get; set; }
         //Collection Navigation Reference
         public virtual ICollection<SystemAction> SystemActions { get; set; }
     }
