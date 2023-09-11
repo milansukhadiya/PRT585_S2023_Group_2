@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Delete Classroom</h1>
+<div mat-dialog-content>
+  <h2>Delete this?</h2>
+  <ul>
+    <li>ID: {{ data.ClassroomId }}</li>
+    <li>Classroom Name: {{ data.ClassroomName }}</li>
+  </ul>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button
+    mat-dialog-close
+    (click)="deleteClassroom()"
+    mat-raised-button
+    color="warn"
+  >
+    Delete
+  </button>
+  <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

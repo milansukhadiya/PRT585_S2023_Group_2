@@ -1,0 +1,52 @@
+
+/* 样式登录卡片 */
+mat-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 样式卡片标题 */
+  mat-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* 样式输入字段容器 */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px; /* 增加垂直间距 */
+  }
+  
+  /* 样式输入字段 */
+  mat-input {
+    font-size: 16px; /* 调整字体大小 */
+  }
+  
+  /* 样式错误消息 */
+  mat-error {
+    color: red;
+    font-size: 12px;
+  }
+    /* 样式成功消息 */
+    mat-hint  {
+        color: green;
+        font-size: 12px;
+      }
+  /* 样式登录按钮容器 */
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* 样式登录按钮 */
+  button {
+    width: 100%;
+    max-width: 200px;
+  }
+  

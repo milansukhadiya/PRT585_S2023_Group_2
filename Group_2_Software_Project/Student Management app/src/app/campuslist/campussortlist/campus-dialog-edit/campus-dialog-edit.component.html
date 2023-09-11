@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Edit Campus</h1>
+<div mat-dialog-content>
+    <form [formGroup]="Campus">
+        <mat-form-field>
+            <mat-label>Campus Name</mat-label>
+            <input formControlName="CampusName" matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Campus Address</mat-label>
+            <input formControlName="CampusAddress" matInput>
+          </mat-form-field>
+    </form>
+    
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button [disabled]="Campus.invalid" mat-dialog-close (click)="updateCampus()" mat-raised-button color="primary">Save</button>
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+</div>

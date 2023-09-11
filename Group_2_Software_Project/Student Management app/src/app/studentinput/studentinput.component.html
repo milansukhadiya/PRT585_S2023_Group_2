@@ -1,0 +1,21 @@
+
+<form #Studentform="ngForm" (ngSubmit)="addStudent(Studentform)">
+    <div class="form-group">
+      <label for="StudentName">Student Name</label>
+      <input
+      #studentnameerror ='ngModel'
+        type="text"
+        class="form-control"
+        id="StudentName"
+        required
+        [(ngModel)]="student.StudentName"
+        name="StudentName"
+      />
+      <div class="alert alert-danger" [hidden]="studentnameerror.valid || studentnameerror.pristine">Student Name is required</div>
+    </div>
+    
+    <div>
+      <button [disabled]="Studentform.invalid" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  

@@ -1,0 +1,38 @@
+
+<form #Scoreform="ngForm" (ngSubmit)="addScore(Scoreform)">
+    <div class="form-group">
+      <label for="UnitId">Unit Name</label>
+
+      <select #unitnameerror ='ngModel' class="form-control" name="UnitId" id="UnitId" required [(ngModel)]="selectedUnitId">
+       <option  value=""></option>
+       <option *ngFor="let c of unit" [value]="c.UnitId">{{ c.UnitName }}</option>
+      </select>
+      <div class="alert alert-danger" [hidden]="unitnameerror.valid || unitnameerror.pristine">Unit Name is required</div>
+    
+      <label for="StudentId">Student Name</label>
+
+      <select #studentnameerror ='ngModel' class="form-control" name="StudentId" id="StudentId" required [(ngModel)]="selectedStudentId">
+       <option  value=""></option>
+       <option *ngFor="let c of student" [value]="c.StudentId">{{ c.StudentName }}</option>
+      </select>
+      <div class="alert alert-danger" [hidden]="studentnameerror.valid || studentnameerror.pristine">Student Name is required</div>
+  
+
+      <label for="ScoreValue">Score</label>
+      <input
+      #scorenameerror ='ngModel'
+        type="number"
+        class="form-control"
+        id="ScoreValue"
+        required
+        [(ngModel)]="ScoreValue"
+        name="ScoreValue"
+      />
+      <div class="alert alert-danger" [hidden]="scorenameerror.valid || scorenameerror.pristine">Score  is required</div>
+    </div>
+    
+    <div>
+      <button [disabled]="Scoreform.invalid" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  

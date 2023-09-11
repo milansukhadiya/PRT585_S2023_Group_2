@@ -1,0 +1,34 @@
+
+<form #Campusform="ngForm" (ngSubmit)="addCampus(Campusform)">
+    <div class="form-group">
+      <label for="CampusName">Campus Name</label>
+      <input
+      #campusnameerror ='ngModel'
+        type="text"
+        class="form-control"
+        id="CampusName"
+        required
+        [(ngModel)]="campus.CampusName"
+        name="CampusName"
+      />
+      <div class="alert alert-danger" [hidden]="campusnameerror.valid || campusnameerror.pristine">Campus Name is required</div>
+    </div>
+    <div class="form-group">
+      <label for="CampusAddress">Campus Address</label>
+      <input
+      #campusaddresserror ='ngModel'
+        type="text"
+        class="form-control"
+        id="CampusAddress"
+        required
+        [(ngModel)]="campus.CampusAddress"
+        name="CampusAddress"
+      />
+      <div class="alert alert-danger" [hidden]="campusaddresserror.valid || campusaddresserror.pristine">Campus Address is required</div>
+    </div>
+    
+    <div>
+      <button [disabled]="Campusform.invalid" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  
