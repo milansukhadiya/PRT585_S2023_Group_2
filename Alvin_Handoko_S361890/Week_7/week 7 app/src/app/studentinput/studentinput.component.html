@@ -14,6 +14,33 @@
       <div class="alert alert-danger" [hidden]="studentnameerror.valid || studentnameerror.pristine">Student Name is required</div>
     </div>
     
+    <div class="form-group">
+      <label for="StudentEmail">Student Email</label>
+      <input
+      #studentemailerror ='ngModel'
+        type="email"
+        email=true
+        class="form-control"
+        id="StudentEmail"
+        required
+        [(ngModel)]="student.StudentEmail"
+        name="StudentEmail"
+      />
+      <div class="alert alert-danger" [hidden]="studentemailerror.valid || studentemailerror.pristine">Valid Student Email is required</div>
+    </div>
+    <div class="form-group">
+      <label for="StudentGender">Student Gender</label>
+      <input
+      #studentgendererror ='ngModel'
+        type="text"
+        class="form-control"
+        id="StudentGender"
+        required
+        [(ngModel)]="student.StudentGender"
+        name="StudentGender"
+      />
+      <div class="alert alert-danger" [hidden]="studentgendererror.valid || studentgendererror.pristine">Student Name is required</div>
+    </div>
     <div>
       <button [disabled]="Studentform.invalid" class="btn btn-primary" type="submit">Submit</button>
     </div>

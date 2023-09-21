@@ -1,0 +1,122 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.sidenav {
+  background: #1B2B6F;
+  transition: all 0.5s ease;
+  position: fixed;
+  z-index: 1;
+  width: 7rem !important;
+  height: 100vh;
+  box-shadow: 0.063rem 0 1.25re, 0 #8690a3 !important;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 0.938rem 0.938rem 0 0.938rem;
+    width: 100%;
+
+    .logo {
+      background: transparent;
+      text-align: center;
+      min-width: 5rem;
+      min-height: 5rem;
+      border-radius: 0.313rem;
+      padding: 0.313rem;
+      font-size: 5rem;
+      font-weight: 900;
+      cursor: pointer;
+      border: none;
+
+      .logo-img {
+        width: 5rem;
+        border-radius: 50%;
+      }
+    }
+    .logo-text {
+      width: 10ch;
+      margin-left: 1.5rem;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .btn-close {
+      padding: 0px;
+      cursor: pointer;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: transparent;
+      border: none;
+      align-items: center;
+
+      .fa-times {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.sidenav-collapsed {
+  width: 22.5625rem !important;
+  .logo-container{
+    .logo{
+        width: 55px;
+        .logo-img{
+            width: 55px;
+        }
+    }
+  }
+}
+.sidenav-nav {
+  list-style: none;
+  padding: 0.938rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100%-3.65rem);
+  cursor: pointer;
+
+  .sidenav-nav-item {
+    width: 100%;
+    margin-bottom: 0.625rem;
+    .sidenav-nav-link {
+      display: flex;
+      align-items: center;
+      height: 5rem;
+      color: #f3f3f3;
+      text-decoration: none;
+      border-radius: 0.625rem;
+      transition: all 0.3s ease;
+
+      .sidenav-link-icon {
+        font-size: 2.5rem;
+        width: 3rem;
+        min-width: 2rem;
+        min-height: 2rem;
+        margin: 0 1.1rem;
+        text-align: center;
+      }
+
+      .sidenav-link-text {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+.sidenav-nav-item:hover {
+  .sidenav-nav-link {
+    background-color: #509CDB;
+    color: #fff;
+  }
+}
+
+
+.active{
+    background-color: #509CDB;
+
+    .sidenav-link-icon,
+    .sidenav-link-text{
+        color: #fff;
+    }
+}

@@ -8,6 +8,7 @@ import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { StudentDialogDeleteComponent } from './student-dialog-delete/student-dialog-delete.component';
 import { StudentDialogEditComponent } from './student-dialog-edit/student-dialog-edit.component';
+import { SiblingServiceService } from 'src/app/sibling-service.service';
 
 @Component({
   selector: 'app-studentsortlist',
@@ -20,7 +21,7 @@ export class StudentsortlistComponent {
   toggleAdd = true;
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-  displayedColumns: string[] = ['StudentId', 'StudentName', 'Action'];
+  displayedColumns: string[] = ['StudentId', 'StudentName', 'StudentEmail', 'StudentGender', 'Action'];
   tableFilter() {
     this.data.filter = this.searchValue.trim().toLocaleLowerCase();
   }
@@ -34,6 +35,8 @@ export class StudentsortlistComponent {
     this.matdialog.open(StudentDialogEditComponent, {width:'30%', data: {
       StudentId : student.StudentId,
       StudentName : student.StudentName,
+      StudentEmail : student.StudentEmail,
+      StudentGender : student.StudentGender
     }});
     this.matdialog.afterAllClosed.subscribe((res)=>this.refresh())
     
@@ -42,7 +45,9 @@ export class StudentsortlistComponent {
   openDialogDelete(student:Student){
     this.matdialog.open(StudentDialogDeleteComponent, {width:'30%',data: {
       StudentId : student.StudentId,
-      StudentName : student.StudentName
+      StudentName : student.StudentName,
+      StudentEmail : student.StudentEmail,
+      StudentGender : student.StudentGender
     }});
     this.matdialog.afterAllClosed.subscribe((res)=>this.refresh())
   }
@@ -50,7 +55,8 @@ export class StudentsortlistComponent {
   constructor(
     private _liveAnnouncer: LiveAnnouncer,
     private service: StudentserviceService,
-    private matdialog: MatDialog
+    private matdialog: MatDialog,
+    private sibling: SiblingServiceService
   ) {
     this.refresh()
   }
@@ -60,6 +66,10 @@ public refresh(){
     this.data.sort = this.sort;
     this.data.paginator = this.paginator;
   });
+}
+
+studentdetail(data:any){
+  this.sibling.studentData = data;
 }
   /** Announce the change in sort state for assistive technology. */
   announceSortChange(sortState: Sort) {

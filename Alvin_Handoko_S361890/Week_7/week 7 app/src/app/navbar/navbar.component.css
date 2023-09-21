@@ -2,9 +2,17 @@
     background-color: cornflowerblue;
     color: white;
   } */
-  .mat-button{
-     color: white;
-  }
-  .spacer{
-    flex: 1 1 auto;
-  }
+.mat-toolbar {
+  background-color: #fff;
+}
+.mat-button {
+  color: black;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

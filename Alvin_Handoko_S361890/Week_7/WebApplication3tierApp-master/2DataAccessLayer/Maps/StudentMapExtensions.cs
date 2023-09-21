@@ -17,7 +17,8 @@ namespace _2DataAccessLayer.Maps
 
             dst.StudentId = src.StudentId;
             dst.StudentName = src.StudentName;
-
+            dst.StudentEmail = src.StudentEmail;
+            dst.StudentGender = src.StudentGender;
             return dst;
         }
 
@@ -30,7 +31,8 @@ namespace _2DataAccessLayer.Maps
 
             dst.StudentId = src.StudentId;
             dst.StudentName = src.StudentName;
-
+            dst.StudentEmail = src.StudentEmail;
+            dst.StudentGender = src.StudentGender;
             return dst;
         }
     }

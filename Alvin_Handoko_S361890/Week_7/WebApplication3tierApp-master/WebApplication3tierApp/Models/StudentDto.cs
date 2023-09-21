@@ -6,6 +6,8 @@ namespace WebApplication3tierApp.Models
     {
         public int StudentId { get; set; }
         public string StudentName { get; set; }
+        public string StudentEmail { get; set; }
+        public string StudentGender { get; set; }
                         
     }
 
@@ -15,7 +17,9 @@ namespace WebApplication3tierApp.Models
         {
             var dst = new StudentDto();
             dst.StudentId = src.StudentId;
-            dst.StudentName = src.StudentName;            
+            dst.StudentName = src.StudentName;
+            dst.StudentEmail = src.StudentEmail;
+            dst.StudentGender = src.StudentGender;
             return dst;
         }
 
@@ -23,7 +27,9 @@ namespace WebApplication3tierApp.Models
         {
             var dst = new StudentModel();
             dst.StudentId = src.StudentId;
-            dst.StudentName = src.StudentName;            
+            dst.StudentName = src.StudentName;
+            dst.StudentEmail = src.StudentEmail;
+            dst.StudentGender = src.StudentGender;
             return dst;
         }
     }

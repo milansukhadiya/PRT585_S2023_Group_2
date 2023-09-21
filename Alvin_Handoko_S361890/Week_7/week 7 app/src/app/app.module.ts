@@ -53,6 +53,12 @@ import { EventDialogEditComponent } from './eventlist/eventsortlist/event-dialog
 import { EnrollmentDialogEditComponent } from './enrollment/enrollment-dialog-edit/enrollment-dialog-edit.component';
 import { EnrollmentDialogDeleteComponent } from './enrollment/enrollment-dialog-delete/enrollment-dialog-delete.component';
 import { EnrollmentDialogAddComponent } from './enrollment/enrollment-dialog-add/enrollment-dialog-add.component';
+import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BodyComponent } from './body/body.component';
+import { StudentdetailsComponent } from './studentlist/studentdetails/studentdetails.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -92,6 +98,9 @@ import { EnrollmentDialogAddComponent } from './enrollment/enrollment-dialog-add
     EventinputComponent,
     EventDialogDeleteComponent,
     EventDialogEditComponent,
+    SidenavbarComponent,
+    BodyComponent,
+    StudentdetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -112,6 +121,9 @@ import { EnrollmentDialogAddComponent } from './enrollment/enrollment-dialog-add
     MatSlideToggleModule,
     MatSelectModule,
     MatCardModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

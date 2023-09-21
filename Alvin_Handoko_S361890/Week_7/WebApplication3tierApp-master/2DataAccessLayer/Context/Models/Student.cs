@@ -13,5 +13,7 @@ namespace _2DataAccessLayer.Context.Models
         public int StudentId { get; set; } // int
         public string StudentName { get; set; } // nvarchar(400)
         
+        public string StudentEmail { get; set;}
+        public string StudentGender { get; set;}
     }
 }

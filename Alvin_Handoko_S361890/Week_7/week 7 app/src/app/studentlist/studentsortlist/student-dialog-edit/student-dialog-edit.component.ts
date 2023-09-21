@@ -17,8 +17,12 @@ export class StudentDialogEditComponent {
   this.Student = this.formBuilder.group({
     StudentId:[this.data.StudentId],
     StudentName: ['', Validators.required],
+    StudentEmail: ['', Validators.required],
+    StudentGender: ['', Validators.required],
   })
   this.Student.controls['StudentName'].setValue(this.data.StudentName);
+  this.Student.controls['StudentEmail'].setValue(this.data.StudentEmail);
+  this.Student.controls['StudentGender'].setValue(this.data.StudentGender);
   }
 
   updateStudent(){

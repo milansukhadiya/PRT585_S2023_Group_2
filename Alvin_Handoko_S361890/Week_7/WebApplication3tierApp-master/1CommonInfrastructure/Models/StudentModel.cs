@@ -16,7 +16,8 @@ namespace _1CommonInfrastructure.Models
         [Required]
         [StringLength(50)]
         public string StudentName { get; set; } // nvarchar(400)
-
+        public string StudentEmail { get; set; }
+        public string StudentGender { get; set; }
 
 
     }

@@ -1,0 +1,27 @@
+<div class="container" *ngIf="studentData.studentData != ''">
+  <div class="studentid">
+    <p>{{ studentData.studentData.StudentId }}</p>
+  </div>
+  <div class="photo">
+    <img
+      
+      src="../../../assets/img/user.png"  height="120px" width="120px"
+    />
+  </div>
+  <div class="studentdetails">
+    <p class="name">{{ studentData.studentData.StudentName }}</p>
+  </div>
+  <div class="icons">
+    <div class="icon">
+        <i class="fa-solid fa-graduation-cap" (click)="true"></i>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-phone-volume" (click)="true"></i>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-envelope" (click)="true"></i>
+    </div>    
+  </div>
+  <div class="about"></div>
+  <div class="gender"></div>
+</div>

@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 export class StudentinputComponent {
   constructor(private studentsortlist:StudentsortlistComponent,private service:StudentserviceService){};
 
-  student: Student = {StudentId:0,StudentName:''};
+  student: Student = {StudentId:0,StudentName:'',StudentEmail:'',StudentGender:''};
   
   addStudent(Studentform: NgForm){
     this.service.postStudent(this.student).subscribe((response)=>console.log(response));

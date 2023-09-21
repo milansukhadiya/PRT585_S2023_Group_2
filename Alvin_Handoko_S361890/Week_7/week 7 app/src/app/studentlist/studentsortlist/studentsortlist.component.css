@@ -34,5 +34,13 @@ table {
   mat-footer-row mat-footer-cell{
     justify-content: center;
   
+  } 
+  .pointer:hover{
+    cursor: pointer;
+  }
+
+  .addbutton{
+    color: #fff;
+    background: #509CDB;
   }
   
